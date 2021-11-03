@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using RazorPagesMovie.Models;
 
-namespace MegaDeskFinal.Pages.Desk
+namespace MegaDeskFinal.Pages.Desks
 {
     public class CreateModel : PageModel
     {
