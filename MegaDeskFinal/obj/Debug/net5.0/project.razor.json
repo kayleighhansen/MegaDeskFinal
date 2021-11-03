@@ -15639,13 +15639,38 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desk/Index.cshtml",
+      "TargetPath": "Pages\\Desk\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desk/Create.cshtml",
+      "TargetPath": "Pages\\Desk\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desk/Delete.cshtml",
+      "TargetPath": "Pages\\Desk\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desk/Details.cshtml",
+      "TargetPath": "Pages\\Desk\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desk/Edit.cshtml",
+      "TargetPath": "Pages\\Desk\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
