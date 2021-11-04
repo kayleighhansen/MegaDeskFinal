@@ -23,12 +23,4 @@ namespace RazorPagesMovie.Models
         public DesktopMaterial desktopMaterial { get; set; }
     }
 
-    public enum DesktopMaterial
-    {
-        Laminate,
-        Oak,
-        Rosewood,
-        Veneer,
-        Pine
-    }
 }
