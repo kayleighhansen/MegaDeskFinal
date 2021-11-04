@@ -17,6 +17,12 @@
                 @Html.DisplayNameFor(model => model.Desk[0].ReleaseDate)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Desk[0].Width)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Desk[0].Depth)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Desk[0].Price)
             </th>
             <th></th>
@@ -27,6 +33,12 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Width)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Depth)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Price)
