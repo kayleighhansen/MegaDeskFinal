@@ -5,7 +5,7 @@ using System.IO;
 
 namespace RazorPagesMovie.Models
 {
-    class DeskQuote
+    public class DeskQuote
     {
         private int[,] _rushOrderPrices;
 
