@@ -31,7 +31,6 @@ namespace RazorPagesMovie.Models
     }
     public class DeskQuote
     {
-
         public int DeskQuoteId { get; set; }
         private int[,] _rushOrderPrices;
         private decimal BASE_DESK_PRICE = 200.00M;
