@@ -5,10 +5,35 @@ using System.IO;
 
 namespace RazorPagesMovie.Models
 {
+     public enum DesktopMaterial
+    {
+        Laminate,
+        Oak,
+        Rosewood,
+        Veneer,
+        Pine
+    }
+    public enum ShippingType
+    {
+        //public int ShippingTypeId { get; set; }
+
+        [Description("Rush 3 Days")]
+        Rush3Days,
+
+        [Description("Rush 5 Days")]
+        Rush5Days,
+
+        [Description("Rush 7 Days")]
+        Rush7Days,
+
+        [Description("No Rush")]
+        NoRush
+    }
     public class DeskQuote
     {
-        private int[,] _rushOrderPrices;
 
+        public int DeskQuoteId { get; set; }
+        private int[,] _rushOrderPrices;
         private decimal BASE_DESK_PRICE = 200.00M;
         private decimal SURFACE_AREA_COST = 1.00M;
         private decimal DRAWER_COST = 50.00M;

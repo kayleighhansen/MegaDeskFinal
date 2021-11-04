@@ -5,6 +5,7 @@ namespace RazorPagesMovie.Models
 {
     public class Desk
     {
+        public int DeskId { get; set; }
         public const short MIN_WIDTH = 24;
         public const short MAX_WIDTH = 96;
         public const short MIN_DEPTH = 12;
