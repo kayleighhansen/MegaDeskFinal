@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj",
+  "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,63 +15619,63 @@
   "RootNamespace": "MegaDeskFinal",
   "Documents": [
     {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Delete.cshtml",
-      "TargetPath": "Pages\\Desks\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Edit.cshtml",
-      "TargetPath": "Pages\\Desks\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Details.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Details.cshtml",
       "TargetPath": "Pages\\Desks\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Shared/_Layout.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Shared/_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Index.cshtml",
-      "TargetPath": "Pages\\Desks\\Index.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/_ViewImports.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Create.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Delete.cshtml",
+      "TargetPath": "Pages\\Desks\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Index.cshtml",
+      "TargetPath": "Pages\\Desks\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Edit.cshtml",
+      "TargetPath": "Pages\\Desks\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Create.cshtml",
       "TargetPath": "Pages\\Desks\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/Pages/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

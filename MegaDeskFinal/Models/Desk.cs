@@ -16,12 +16,12 @@ namespace RazorPagesMovie.Models
         public int ID { get; set; }
         public decimal Width { get; set; }
         public decimal Depth { get; set; }
-         public int NumberOfDrawers { get; set; }
+        public int NumberOfDrawers { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
         public decimal Price { get; set; }
-        public DesktopMaterial desktopMaterial { get; set; }
+
     }
 
 }

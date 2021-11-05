@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj": {}
+    "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj": {}
   },
   "projects": {
-    "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj": {
+    "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj",
+        "projectUniqueName": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj",
         "projectName": "MegaDeskFinal",
-        "projectPath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj",
-        "packagesPath": "/Users/kayleighhansen/.nuget/packages/",
-        "outputPath": "/Users/kayleighhansen/Software/MegaDeskFinal/MegaDeskFinal/obj/",
+        "projectPath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/MegaDeskFinal.csproj",
+        "packagesPath": "/Users/lydiaswanson/.nuget/packages/",
+        "outputPath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/kayleighhansen/.nuget/NuGet/NuGet.Config"
+          "/Users/lydiaswanson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"

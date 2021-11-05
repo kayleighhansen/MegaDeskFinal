@@ -5,14 +5,6 @@ using System.IO;
 
 namespace RazorPagesMovie.Models
 {
-     public enum DesktopMaterial
-    {
-        Laminate,
-        Oak,
-        Rosewood,
-        Veneer,
-        Pine
-    }
     public enum ShippingType
     {
         //public int ShippingTypeId { get; set; }
@@ -36,11 +28,11 @@ namespace RazorPagesMovie.Models
         private decimal BASE_DESK_PRICE = 200.00M;
         private decimal SURFACE_AREA_COST = 1.00M;
         private decimal DRAWER_COST = 50.00M;
-        private decimal OAK_COST = 200.00M;
-        private decimal LAMINATE_COST = 100.00M;
-        private decimal PINE_COST = 50.00M;
-        private decimal ROSEWOOD_COST = 300.00M;
-        private decimal VENEER_COST = 125.00M;
+        // private decimal OAK_COST = 200.00M;
+        // private decimal LAMINATE_COST = 100.00M;
+        // private decimal PINE_COST = 50.00M;
+        // private decimal ROSEWOOD_COST = 300.00M;
+        // private decimal VENEER_COST = 125.00M;
 
         public Desk Desk { get; set; }
         public int RushDays { get; set; }
@@ -70,24 +62,24 @@ namespace RazorPagesMovie.Models
 
             decimal surfaceMaterialPrice = 0.0M;
 
-            switch (this.Desk.desktopMaterial)
-            {
-                case DesktopMaterial.Laminate:
-                    surfaceMaterialPrice = LAMINATE_COST;
-                    break;
-                case DesktopMaterial.Pine:
-                    surfaceMaterialPrice = PINE_COST;
-                    break;
-                case DesktopMaterial.Oak:
-                    surfaceMaterialPrice = OAK_COST;
-                    break;
-                case DesktopMaterial.Rosewood:
-                    surfaceMaterialPrice = ROSEWOOD_COST;
-                    break;
-                case DesktopMaterial.Veneer:
-                    surfaceMaterialPrice = VENEER_COST;
-                    break;
-            }
+            // switch (this.Desk.desktopMaterial)
+            // {
+            //     case DesktopMaterial.Laminate:
+            //         surfaceMaterialPrice = LAMINATE_COST;
+            //         break;
+            //     case DesktopMaterial.Pine:
+            //         surfaceMaterialPrice = PINE_COST;
+            //         break;
+            //     case DesktopMaterial.Oak:
+            //         surfaceMaterialPrice = OAK_COST;
+            //         break;
+            //     case DesktopMaterial.Rosewood:
+            //         surfaceMaterialPrice = ROSEWOOD_COST;
+            //         break;
+            //     case DesktopMaterial.Veneer:
+            //         surfaceMaterialPrice = VENEER_COST;
+            //         break;
+            // }
 
             decimal shippingPrice = 0.00M;
 
@@ -140,7 +132,7 @@ namespace RazorPagesMovie.Models
             }
 
             quotePrice = quotePrice + surfacePrice + drawerPrice + surfaceMaterialPrice + shippingPrice;
-            
+
             return quotePrice;
         }
         public void getRushOrderPrices()
