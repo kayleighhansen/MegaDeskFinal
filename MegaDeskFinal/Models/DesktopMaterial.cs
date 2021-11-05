@@ -6,7 +6,7 @@ using System.IO;
 
 namespace MegaDeskFinal.Models
 {
-    public class DesktopMaterials
+    public class DesktopMaterial
     {
         public int DesktopMaterialId { get; set; }
 

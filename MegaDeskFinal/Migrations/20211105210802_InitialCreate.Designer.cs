@@ -2,14 +2,16 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MegaDeskFinal.Migrations
 {
     [DbContext(typeof(MegaDeskFinalContext))]
-    partial class MegaDeskFinalContextModelSnapshot : ModelSnapshot
+    [Migration("20211105210802_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -24,7 +26,7 @@ namespace MegaDeskFinal.Migrations
                     b.Property<decimal>("Depth")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("DesktopMaterialId")
+                    b.Property<int?>("DesktopMaterialId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("NumberOfDrawers")
@@ -49,13 +51,13 @@ namespace MegaDeskFinal.Migrations
                     b.Property<string>("CustomerName")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime>("DateCreated")
+                    b.Property<DateTime>("DateQutoe")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("DeskId")
+                    b.Property<int?>("DeskId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ShippingTypeId")
+                    b.Property<int?>("ShippingTypeId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("DeskQuoteId");
@@ -111,9 +113,7 @@ namespace MegaDeskFinal.Migrations
                 {
                     b.HasOne("MegaDeskFinal.Models.DesktopMaterial", "DesktopMaterial")
                         .WithMany()
-                        .HasForeignKey("DesktopMaterialId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DesktopMaterialId");
 
                     b.Navigation("DesktopMaterial");
                 });
@@ -122,15 +122,11 @@ namespace MegaDeskFinal.Migrations
                 {
                     b.HasOne("MegaDeskFinal.Models.Desk", "Desk")
                         .WithMany()
-                        .HasForeignKey("DeskId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DeskId");
 
                     b.HasOne("MegaDeskFinal.Models.ShippingType", "ShippingType")
                         .WithMany()
-                        .HasForeignKey("ShippingTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ShippingTypeId");
 
                     b.Navigation("Desk");
 

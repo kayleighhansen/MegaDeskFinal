@@ -2,14 +2,16 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MegaDeskFinal.Migrations
 {
     [DbContext(typeof(MegaDeskFinalContext))]
-    partial class MegaDeskFinalContextModelSnapshot : ModelSnapshot
+    [Migration("20211105222636_UpDatingClasses")]
+    partial class UpDatingClasses
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

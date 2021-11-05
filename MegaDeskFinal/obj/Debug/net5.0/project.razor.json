@@ -15624,8 +15624,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Details.cshtml",
-      "TargetPath": "Pages\\Desks\\Details.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/DeskQuotes/Create.cshtml",
+      "TargetPath": "Pages\\DeskQuotes\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/DeskQuotes/Index.cshtml",
+      "TargetPath": "Pages\\DeskQuotes\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15644,13 +15649,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Delete.cshtml",
-      "TargetPath": "Pages\\Desks\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Index.cshtml",
-      "TargetPath": "Pages\\Desks\\Index.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/DeskQuotes/Details.cshtml",
+      "TargetPath": "Pages\\DeskQuotes\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15664,13 +15664,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Edit.cshtml",
-      "TargetPath": "Pages\\Desks\\Edit.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/DeskQuotes/Edit.cshtml",
+      "TargetPath": "Pages\\DeskQuotes\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/Desks/Create.cshtml",
-      "TargetPath": "Pages\\Desks\\Create.cshtml",
+      "FilePath": "/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/Pages/DeskQuotes/Delete.cshtml",
+      "TargetPath": "Pages\\DeskQuotes\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {

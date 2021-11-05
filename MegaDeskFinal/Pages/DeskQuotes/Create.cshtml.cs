@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MegaDeskFinal.Models;
 
-namespace MegaDeskFinal.Pages.Desks
+namespace MegaDeskFinal.Pages.DeskQuotes
 {
     public class CreateModel : PageModel
     {
@@ -24,7 +24,7 @@ namespace MegaDeskFinal.Pages.Desks
         }
 
         [BindProperty]
-        public Desk Desk { get; set; }
+        public DeskQuote DeskQuote { get; set; }
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
@@ -34,7 +34,7 @@ namespace MegaDeskFinal.Pages.Desks
                 return Page();
             }
 
-            _context.Desk.Add(Desk);
+            _context.DeskQuote.Add(DeskQuote);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using MegaDeskFinal.Models;
 
-namespace MegaDeskFinal.Pages.Desks
+namespace MegaDeskFinal.Pages.DeskQuotes
 {
     public class IndexModel : PageModel
     {
@@ -18,11 +18,11 @@ namespace MegaDeskFinal.Pages.Desks
             _context = context;
         }
 
-        public IList<Desk> Desk { get;set; }
+        public IList<DeskQuote> DeskQuote { get;set; }
 
         public async Task OnGetAsync()
         {
-            Desk = await _context.Desk.ToListAsync();
+            DeskQuote = await _context.DeskQuote.ToListAsync();
         }
     }
 }
