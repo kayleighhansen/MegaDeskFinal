@@ -15,10 +15,10 @@ namespace MegaDeskFinal
     public class Startup
     {
         public Startup(IConfiguration configuration, IWebHostEnvironment env)
-    {
-        Environment = env;
-        Configuration = configuration;
-    }
+        {
+            Environment = env;
+            Configuration = configuration;
+        }
 
         public IConfiguration Configuration { get; }
         public IWebHostEnvironment Environment { get; }
@@ -33,7 +33,14 @@ namespace MegaDeskFinal
                 services.AddDbContext<MegaDeskFinalContext>(options =>
                         options.UseSqlite(Configuration.GetConnectionString("MegaDeskFinalContext")));
             }
-            
+            else
+            {
+                services.AddDbContext<MegaDeskFinalContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("MovieContext")));
+            }
+
+
             services.AddRazorPages();
         }
 

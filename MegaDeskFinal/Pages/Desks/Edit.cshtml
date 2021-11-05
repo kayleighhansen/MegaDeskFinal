@@ -7,37 +7,42 @@
 
 <h1>Edit</h1>
 
-<h4>DeskQuote</h4>
+<h4>Desk</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="DeskQuote.DeskQuoteId" />
             <div class="form-group">
-                <label asp-for="DeskQuote.RushDays" class="control-label"></label>
-                <input asp-for="DeskQuote.RushDays" class="form-control" />
-                <span asp-validation-for="DeskQuote.RushDays" class="text-danger"></span>
+                <label asp-for="Desk.DeskId" class="control-label"></label>
+                <input asp-for="Desk.DeskId" class="form-control" />
+                <span asp-validation-for="Desk.DeskId" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Desk.ID" />
+            <div class="form-group">
+                <label asp-for="Desk.Width" class="control-label"></label>
+                <input asp-for="Desk.Width" class="form-control" />
+                <span asp-validation-for="Desk.Width" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.CustomerName" class="control-label"></label>
-                <input asp-for="DeskQuote.CustomerName" class="form-control" />
-                <span asp-validation-for="DeskQuote.CustomerName" class="text-danger"></span>
+                <label asp-for="Desk.Depth" class="control-label"></label>
+                <input asp-for="Desk.Depth" class="form-control" />
+                <span asp-validation-for="Desk.Depth" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.QuoteDate" class="control-label"></label>
-                <input asp-for="DeskQuote.QuoteDate" class="form-control" />
-                <span asp-validation-for="DeskQuote.QuoteDate" class="text-danger"></span>
+                <label asp-for="Desk.NumberOfDrawers" class="control-label"></label>
+                <input asp-for="Desk.NumberOfDrawers" class="form-control" />
+                <span asp-validation-for="Desk.NumberOfDrawers" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.QuoteAmount" class="control-label"></label>
-                <input asp-for="DeskQuote.QuoteAmount" class="form-control" />
-                <span asp-validation-for="DeskQuote.QuoteAmount" class="text-danger"></span>
+                <label asp-for="Desk.ReleaseDate" class="control-label"></label>
+                <input asp-for="Desk.ReleaseDate" class="form-control" />
+                <span asp-validation-for="Desk.ReleaseDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.shipping" class="control-label"></label>
-                <select asp-for="DeskQuote.shipping" class="form-control"></select>
-                <span asp-validation-for="DeskQuote.shipping" class="text-danger"></span>
+                <label asp-for="Desk.Price" class="control-label"></label>
+                <input asp-for="Desk.Price" class="form-control" />
+                <span asp-validation-for="Desk.Price" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

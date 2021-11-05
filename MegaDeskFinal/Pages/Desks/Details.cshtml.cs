@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.Models;
+using MegaDeskFinal.Models;
 
 namespace MegaDeskFinal.Pages.Desks
 {
@@ -18,7 +18,7 @@ namespace MegaDeskFinal.Pages.Desks
             _context = context;
         }
 
-        public DeskQuote DeskQuote { get; set; }
+        public Desk Desk { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -27,9 +27,9 @@ namespace MegaDeskFinal.Pages.Desks
                 return NotFound();
             }
 
-            DeskQuote = await _context.DeskQuote.FirstOrDefaultAsync(m => m.DeskQuoteId == id);
+            Desk = await _context.Desk.FirstOrDefaultAsync(m => m.ID == id);
 
-            if (DeskQuote == null)
+            if (Desk == null)
             {
                 return NotFound();
             }

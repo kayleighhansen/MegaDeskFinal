@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.Models;
+using MegaDeskFinal.Models;
 
 namespace MegaDeskFinal.Pages.Desks
 {
@@ -18,11 +18,11 @@ namespace MegaDeskFinal.Pages.Desks
             _context = context;
         }
 
-        public IList<DeskQuote> DeskQuote { get;set; }
+        public IList<Desk> Desk { get;set; }
 
         public async Task OnGetAsync()
         {
-            DeskQuote = await _context.DeskQuote.ToListAsync();
+            Desk = await _context.Desk.ToListAsync();
         }
     }
 }

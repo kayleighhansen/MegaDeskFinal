@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace RazorPagesMovie.Models
+namespace MegaDeskFinal.Models
 {
     public class Desk
     {

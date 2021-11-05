@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using RazorPagesMovie.Models;
+using MegaDeskFinal.Models;
 
-    public class MegaDeskFinalContext : DbContext
+public class MegaDeskFinalContext : DbContext
+{
+    public MegaDeskFinalContext(DbContextOptions<MegaDeskFinalContext> options)
+        : base(options)
     {
-        public MegaDeskFinalContext (DbContextOptions<MegaDeskFinalContext> options)
-            : base(options)
-        {
-        }
-
-        public DbSet<RazorPagesMovie.Models.DeskQuote> DeskQuote { get; set; }
     }
+
+    public DbSet<MegaDeskFinal.Models.DeskQuote> DeskQuote { get; set; }
+
+    public DbSet<MegaDeskFinal.Models.Desk> Desk { get; set; }
+}

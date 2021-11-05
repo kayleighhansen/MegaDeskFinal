@@ -323,11 +323,6 @@
 /Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/MegaDeskFinal.TagHelpers.input.cache
 /Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/MegaDeskFinal.TagHelpers.output.cache
 /Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/MegaDeskFinal.RazorCoreGenerate.cache
-/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Create.cshtml.g.cs
-/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Delete.cshtml.g.cs
-/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Details.cshtml.g.cs
-/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Edit.cshtml.g.cs
-/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Index.cshtml.g.cs
 /Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs
 /Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Index.cshtml.g.cs
 /Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Privacy.cshtml.g.cs
@@ -340,3 +335,8 @@
 /Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/MegaDeskFinal.Views.pdb
 /Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/MegaDeskFinal.csproj.CopyComplete
 /Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/MegaDeskFinal.genruntimeconfig.cache
+/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Create.cshtml.g.cs
+/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Delete.cshtml.g.cs
+/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Details.cshtml.g.cs
+/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Edit.cshtml.g.cs
+/Users/lydiaswanson/Desktop/MegaDeskFinal/MegaDeskFinal/obj/Debug/net5.0/Razor/Pages/Desks/Index.cshtml.g.cs
