@@ -36,6 +36,8 @@ namespace MegaDeskFinal.Pages.DeskQuotes
                 return Page();
             }
 
+            DeskQuote.DateCreated = DateTime.Now;
+
             _context.DeskQuote.Add(DeskQuote);
             await _context.SaveChangesAsync();
 
