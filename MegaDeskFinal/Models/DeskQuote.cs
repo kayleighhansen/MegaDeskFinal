@@ -26,7 +26,34 @@ namespace MegaDeskFinal.Models
 
         public decimal GetQuotePrice(MegaDeskFinalContext context)
         {
-            return 2;
+            decimal quotePrice = BASE_DESK_PRICE;
+            decimal surfaceArea = this.Desk.Depth * this.Desk.Width * this.SURFACE_AREA_COST;
+            decimal numOfDrawsCost = this.Desk.NumberOfDrawers * this.DRAWER_COST;
+            decimal desktopMaterialPrice = this.Desk.DesktopMaterial.DeskMaterialPrice;
+            decimal shippingPrice;
+
+            if (surfaceArea > 1000)
+            {
+                quotePrice += surfaceArea;
+            }
+
+            if (surfaceArea < 1000)
+            {
+                shippingPrice = this.ShippingType.PriceLessOneThousand;
+            }
+            else if (surfaceArea <= 2000)
+            {
+                shippingPrice = this.ShippingType.PriceThousandToTwoThousand;
+            }
+            else
+            {
+                shippingPrice = this.ShippingType.PriceGreaterTwoThousand;
+            }
+
+            quotePrice += numOfDrawsCost + desktopMaterialPrice + shippingPrice;
+
+            return quotePrice;
+
         }
 
         // hold the logic in determining the desk quote total

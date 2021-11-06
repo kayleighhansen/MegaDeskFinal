@@ -20,9 +20,6 @@
                 @Html.DisplayNameFor(model => model.DeskQuote[0].QuotePrice)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DeskQuote[0].Desk)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.DeskQuote[0].ShippingType)
             </th>
             <th>
@@ -32,29 +29,27 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.DeskQuote) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.QuotePrice)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Desk.DeskId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ShippingType.ShippingTypeId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateCreated)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.DeskQuoteId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.DeskQuoteId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.DeskQuoteId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.DeskQuote)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CustomerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QuotePrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShippingType.ShippingTypeName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateCreated)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.DeskQuoteId">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.DeskQuoteId">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.DeskQuoteId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
