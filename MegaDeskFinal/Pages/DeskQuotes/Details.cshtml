@@ -18,6 +18,24 @@
             @Html.DisplayFor(model => model.DeskQuote.CustomerName)
         </dd>
         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.QuotePrice)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.QuotePrice)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.Desk)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.Desk.DeskId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.DeskQuote.ShippingType)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DeskQuote.ShippingType.ShippingTypeId)
+        </dd>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.DeskQuote.DateCreated)
         </dt>
         <dd class="col-sm-10">

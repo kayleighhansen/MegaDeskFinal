@@ -9,14 +9,14 @@ namespace MegaDeskFinal.Models
     {
         public int DeskQuoteId { get; set; }
 
+        public string CustomerName { get; set; }
+        public decimal QuotePrice { get; set; }
+
         public int DeskId { get; set; }
         public Desk Desk { get; set; }
 
         public int ShippingTypeId { get; set; }
         public ShippingType ShippingType { get; set; }
-
-
-        public string CustomerName { get; set; }
         public DateTime DateCreated { get; set; }
 
 
@@ -24,7 +24,7 @@ namespace MegaDeskFinal.Models
         private decimal SURFACE_AREA_COST = 1.00M;
         private decimal DRAWER_COST = 50.00M;
 
-        public decimal GetQuotePrice()
+        public decimal GetQuotePrice(MegaDeskFinalContext context)
         {
             return 2;
         }

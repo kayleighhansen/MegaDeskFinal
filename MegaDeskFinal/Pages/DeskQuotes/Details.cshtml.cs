@@ -27,7 +27,9 @@ namespace MegaDeskFinal.Pages.DeskQuotes
                 return NotFound();
             }
 
-            DeskQuote = await _context.DeskQuote.FirstOrDefaultAsync(m => m.DeskQuoteId == id);
+            DeskQuote = await _context.DeskQuote
+                .Include(d => d.Desk)
+                .Include(d => d.ShippingType).FirstOrDefaultAsync(m => m.DeskQuoteId == id);
 
             if (DeskQuote == null)
             {

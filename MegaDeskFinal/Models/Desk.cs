@@ -19,6 +19,8 @@ namespace MegaDeskFinal.Models
         public int DesktopMaterialId { get; set; }
         public DesktopMaterial DesktopMaterial { get; set; }
 
+        public DeskQuote DeskQuote { get; set; }
+
         // [DataType(DataType.Date)]
         // public DateTime ReleaseDate { get; set; }
         // public decimal Price { get; set; }

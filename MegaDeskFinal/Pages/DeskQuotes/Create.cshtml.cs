@@ -20,6 +20,8 @@ namespace MegaDeskFinal.Pages.DeskQuotes
 
         public IActionResult OnGet()
         {
+        ViewData["DeskId"] = new SelectList(_context.Desk, "DeskId", "DeskId");
+        ViewData["ShippingTypeId"] = new SelectList(_context.Set<ShippingType>(), "ShippingTypeId", "ShippingTypeId");
             return Page();
         }
 

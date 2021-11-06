@@ -55,12 +55,16 @@ namespace MegaDeskFinal.Migrations
                     b.Property<int>("DeskId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<decimal>("QuotePrice")
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("ShippingTypeId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("DeskQuoteId");
 
-                    b.HasIndex("DeskId");
+                    b.HasIndex("DeskId")
+                        .IsUnique();
 
                     b.HasIndex("ShippingTypeId");
 
@@ -121,8 +125,8 @@ namespace MegaDeskFinal.Migrations
             modelBuilder.Entity("MegaDeskFinal.Models.DeskQuote", b =>
                 {
                     b.HasOne("MegaDeskFinal.Models.Desk", "Desk")
-                        .WithMany()
-                        .HasForeignKey("DeskId")
+                        .WithOne("DeskQuote")
+                        .HasForeignKey("MegaDeskFinal.Models.DeskQuote", "DeskId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -135,6 +139,11 @@ namespace MegaDeskFinal.Migrations
                     b.Navigation("Desk");
 
                     b.Navigation("ShippingType");
+                });
+
+            modelBuilder.Entity("MegaDeskFinal.Models.Desk", b =>
+                {
+                    b.Navigation("DeskQuote");
                 });
 #pragma warning restore 612, 618
         }

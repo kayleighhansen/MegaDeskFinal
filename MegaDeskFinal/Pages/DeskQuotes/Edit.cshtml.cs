@@ -29,12 +29,16 @@ namespace MegaDeskFinal.Pages.DeskQuotes
                 return NotFound();
             }
 
-            DeskQuote = await _context.DeskQuote.FirstOrDefaultAsync(m => m.DeskQuoteId == id);
+            DeskQuote = await _context.DeskQuote
+                .Include(d => d.Desk)
+                .Include(d => d.ShippingType).FirstOrDefaultAsync(m => m.DeskQuoteId == id);
 
             if (DeskQuote == null)
             {
                 return NotFound();
             }
+           ViewData["DeskId"] = new SelectList(_context.Desk, "DeskId", "DeskId");
+           ViewData["ShippingTypeId"] = new SelectList(_context.Set<ShippingType>(), "ShippingTypeId", "ShippingTypeId");
             return Page();
         }
 

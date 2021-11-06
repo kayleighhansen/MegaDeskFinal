@@ -22,7 +22,9 @@ namespace MegaDeskFinal.Pages.DeskQuotes
 
         public async Task OnGetAsync()
         {
-            DeskQuote = await _context.DeskQuote.ToListAsync();
+            DeskQuote = await _context.DeskQuote
+                .Include(d => d.Desk)
+                .Include(d => d.ShippingType).ToListAsync();
         }
     }
 }
