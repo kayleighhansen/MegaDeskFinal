@@ -37,6 +37,7 @@ namespace MegaDeskFinal.Pages.DeskQuotes
             }
 
             DeskQuote.DateCreated = DateTime.Now;
+            DeskQuote.QuotePrice = DeskQuote.GetQuotePrice(_context);
 
             _context.DeskQuote.Add(DeskQuote);
             await _context.SaveChangesAsync();
