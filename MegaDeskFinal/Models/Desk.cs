@@ -14,9 +14,13 @@ namespace MegaDeskFinal.Models
         // public const short MAX_DESK_DRAWERS = 7;
         public decimal Width { get; set; }
         public decimal Depth { get; set; }
+
+        [Display(Name = "Number of Drawers")]
         public int NumberOfDrawers { get; set; }
 
         public int DesktopMaterialId { get; set; }
+
+        [Display(Name = "Desktop Material")]
         public DesktopMaterial DesktopMaterial { get; set; }
 
         public DeskQuote DeskQuote { get; set; }

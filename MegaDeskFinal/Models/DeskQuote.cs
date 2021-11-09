@@ -9,14 +9,22 @@ namespace MegaDeskFinal.Models
     {
         public int DeskQuoteId { get; set; }
 
+        [Display(Name = "Customer Name")]  
         public string CustomerName { get; set; }
+
+        [Display(Name = "Quote Price")]  
         public decimal QuotePrice { get; set; }
 
         public int DeskId { get; set; }
         public Desk Desk { get; set; }
 
         public int ShippingTypeId { get; set; }
+
+
+        [Display(Name = "Shipping Type")]  
         public ShippingType ShippingType { get; set; }
+
+        [Display(Name = "Date Created")]
         public DateTime DateCreated { get; set; }
 
 
