@@ -29,7 +29,7 @@ namespace MegaDeskFinal.Pages.DeskQuotes
 
             DeskQuote = await _context.DeskQuote
                 .Include(d => d.Desk)
-                .Include(d => d.ShippingType).FirstOrDefaultAsync(m => m.DeskQuoteId == id);
+                .Include(d => d.Desk).FirstOrDefaultAsync(m => m.DeskQuoteId == id);
 
             if (DeskQuote == null)
             {

@@ -12,8 +12,8 @@ namespace MegaDeskFinal.Models
         // public const short MAX_DEPTH = 48;
         // public const short MIN_DESK_DRAWERS = 0;
         // public const short MAX_DESK_DRAWERS = 7;
-        public decimal Width { get; set; }
-        public decimal Depth { get; set; }
+        public int Width { get; set; }
+        public int Depth { get; set; }
 
         [Display(Name = "Number of Drawers")]
         public int NumberOfDrawers { get; set; }
