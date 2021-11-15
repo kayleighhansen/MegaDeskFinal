@@ -38,7 +38,7 @@ namespace MegaDeskFinal.Pages.DeskQuotes
             {
                 return NotFound();
             }
-           ViewData["DesktopMaterialId"] = new SelectList(_context.DesktopMaterials, "DesktopMaterialId", "DesktopMaterialName");
+           ViewData["DesktopMaterialId"] = new SelectList(_context.DesktopMaterial, "DesktopMaterialId", "DesktopMaterialName");
            ViewData["ShippingTypeId"] = new SelectList(_context.Set<ShippingType>(), "ShippingTypeId", "ShippingTypeName");
             return Page();
         }
@@ -52,11 +52,13 @@ namespace MegaDeskFinal.Pages.DeskQuotes
                 return Page();
             }
 
-            _context.Attach(DeskQuote).State = EntityState.Modified;
+            _context.Attach(DeskQuote.Desk).State = EntityState.Modified;
 
             try
             {
                 await _context.SaveChangesAsync();
+
+                DeskQuote.QuotePrice = 
             }
             catch (DbUpdateConcurrencyException)
             {
