@@ -29,6 +29,9 @@ namespace MegaDeskFinal.Pages.DeskQuotes
         [BindProperty]
         public DeskQuote DeskQuote { get; set; }
 
+        [BindProperty]
+        public Desk Desk { get; set; }
+
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
@@ -37,7 +40,15 @@ namespace MegaDeskFinal.Pages.DeskQuotes
                 return Page();
             }
 
+            _context.Desk.Add(Desk);
+            await _context.SaveChangesAsync();
+
+            DeskQuote.DeskId = Desk.DeskId;
+
+            DeskQuote.Desk = Desk;
+
             DeskQuote.DateCreated = DateTime.Now;
+            
             DeskQuote.QuotePrice = DeskQuote.GetQuotePrice(_context);
 
             _context.DeskQuote.Add(DeskQuote);

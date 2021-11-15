@@ -58,7 +58,11 @@ namespace MegaDeskFinal.Pages.DeskQuotes
             {
                 await _context.SaveChangesAsync();
 
-                DeskQuote.QuotePrice = 
+                DeskQuote.QuotePrice = DeskQuote.GetQuotePrice(_context);
+
+                _context.Attach(DeskQuote).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
+
             }
             catch (DbUpdateConcurrencyException)
             {
