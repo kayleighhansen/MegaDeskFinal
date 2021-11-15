@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MegaDeskFinal.Models;
+using MegaDeskFinal.Data;
 
 namespace MegaDeskFinal.Pages.DeskQuotes
 {
@@ -37,8 +38,8 @@ namespace MegaDeskFinal.Pages.DeskQuotes
             {
                 return NotFound();
             }
-           ViewData["DeskId"] = new SelectList(_context.Desk, "DeskId", "DeskId");
-           ViewData["ShippingTypeId"] = new SelectList(_context.Set<ShippingType>(), "ShippingTypeId", "ShippingTypeId");
+           ViewData["DesktopMaterialId"] = new SelectList(_context.DesktopMaterials, "DesktopMaterialId", "DesktopMaterialName");
+           ViewData["ShippingTypeId"] = new SelectList(_context.Set<ShippingType>(), "ShippingTypeId", "ShippingTypeName");
             return Page();
         }
 

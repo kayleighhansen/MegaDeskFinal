@@ -2,6 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.IO;
+using MegaDeskFinal.Data;
 
 namespace MegaDeskFinal.Models
 {
@@ -37,7 +38,9 @@ namespace MegaDeskFinal.Models
             decimal quotePrice = BASE_DESK_PRICE;
             decimal surfaceArea = this.Desk.Depth * this.Desk.Width * this.SURFACE_AREA_COST;
             decimal numOfDrawsCost = this.Desk.NumberOfDrawers * this.DRAWER_COST;
-            decimal desktopMaterialPrice = this.Desk.DesktopMaterial.DeskMaterialPrice;
+            //decimal desktopMaterialPrice = this.Desk.DesktopMaterial.DeskMaterialPrice;
+            decimal desktopMaterialPrice = 0.00M;
+            var desktopMaterialPrices = context.DesktopMaterials;
             decimal shippingPrice;
 
             if (surfaceArea > 1000)
