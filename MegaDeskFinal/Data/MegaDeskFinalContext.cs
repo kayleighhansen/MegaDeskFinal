@@ -21,7 +21,7 @@ public class MegaDeskFinalContext : DbContext
 
     public DbSet<MegaDeskFinal.Models.ShippingType> ShippingType { get; set; }
 
-    public DbSet<MegaDeskFinal.Models.DesktopMaterial> DesktopMaterials { get; set; }
+    public DbSet<MegaDeskFinal.Models.DesktopMaterial> DesktopMaterial { get; set; }
 }
 
 }

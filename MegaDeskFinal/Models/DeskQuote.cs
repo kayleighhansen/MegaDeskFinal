@@ -40,7 +40,7 @@ namespace MegaDeskFinal.Models
             decimal numOfDrawsCost = this.Desk.NumberOfDrawers * this.DRAWER_COST;
             //decimal desktopMaterialPrice = this.Desk.DesktopMaterial.DeskMaterialPrice;
             decimal desktopMaterialPrice = 0.00M;
-            var desktopMaterialPrices = context.DesktopMaterials;
+            var desktopMaterialPrices = context.DesktopMaterial;
             decimal shippingPrice;
 
             if (surfaceArea > 1000)
