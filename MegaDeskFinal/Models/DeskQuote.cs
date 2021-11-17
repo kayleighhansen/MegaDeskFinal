@@ -3,6 +3,8 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using System.IO;
 using MegaDeskFinal.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace MegaDeskFinal.Models
 {
@@ -36,29 +38,40 @@ namespace MegaDeskFinal.Models
         public decimal GetQuotePrice(MegaDeskFinalContext context)
         {
             decimal quotePrice = BASE_DESK_PRICE;
-            decimal surfaceArea = this.Desk.Depth * this.Desk.Width * this.SURFACE_AREA_COST;
+            decimal surfaceArea = this.Desk.Depth * this.Desk.Width;
             decimal numOfDrawsCost = this.Desk.NumberOfDrawers * this.DRAWER_COST;
             //decimal desktopMaterialPrice = this.Desk.DesktopMaterial.DeskMaterialPrice;
+            
             decimal desktopMaterialPrice = 0.00M;
-            var desktopMaterialPrices = context.DesktopMaterial;
-            decimal shippingPrice;
 
+            var desktopMaterial = context.DesktopMaterial
+                .Where(d => d.DesktopMaterialId == this.Desk.DesktopMaterialId)
+                .FirstOrDefault();
+
+            desktopMaterialPrice = desktopMaterial.DeskMaterialPrice;
+            
             if (surfaceArea > 1000)
             {
-                quotePrice += surfaceArea;
+                quotePrice += (surfaceArea - 1000) * this.SURFACE_AREA_COST;
             }
+
+            decimal shippingPrice = 0.00M;
+
+            var shippingPrices = context.ShippingType
+                .Where(d => d.ShippingTypeId == this.ShippingTypeId).FirstOrDefault();
+
 
             if (surfaceArea < 1000)
             {
-                shippingPrice = this.ShippingType.PriceLessOneThousand;
+                shippingPrice = shippingPrices.PriceLessOneThousand;
             }
             else if (surfaceArea <= 2000)
             {
-                shippingPrice = this.ShippingType.PriceThousandToTwoThousand;
+                shippingPrice = shippingPrices.PriceThousandToTwoThousand;
             }
             else
             {
-                shippingPrice = this.ShippingType.PriceGreaterTwoThousand;
+                shippingPrice = shippingPrices.PriceGreaterTwoThousand;
             }
 
             quotePrice += numOfDrawsCost + desktopMaterialPrice + shippingPrice;

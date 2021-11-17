@@ -15,13 +15,13 @@ public class MegaDeskFinalContext : DbContext
     {
     }
 
-    public DbSet<MegaDeskFinal.Models.DeskQuote> DeskQuote { get; set; }
+    public DbSet<DeskQuote> DeskQuote { get; set; }
 
-    public DbSet<MegaDeskFinal.Models.Desk> Desk { get; set; }
+    public DbSet<Desk> Desk { get; set; }
 
-    public DbSet<MegaDeskFinal.Models.ShippingType> ShippingType { get; set; }
+    public DbSet<ShippingType> ShippingType { get; set; }
 
-    public DbSet<MegaDeskFinal.Models.DesktopMaterial> DesktopMaterial { get; set; }
+    public DbSet<DesktopMaterial> DesktopMaterial { get; set; }
 }
 
 }
